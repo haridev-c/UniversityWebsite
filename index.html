@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script defer src="main.js"></script>
+    <script type="module" defer src="main.js"></script>
   </head>
   <body class="m-0 p-0 font-poppins text-gray-700">
     <section
@@ -26,18 +26,15 @@
         </a>
         <div class="cursor-pointer lg:hidden">
           <i
+            id="hamburgerMenu"
             class="fa fa-bars text-white cursor-pointer"
-            onclick="showMenu()"
           ></i>
         </div>
         <div
           class="fixed top-0 right-[-100%] w-[60%] h-full bg-orange-600 text-white p-8 transition-all duration-300 lg:hidden"
           id="logslink"
         >
-          <i
-            class="fa fa-times cursor-pointer text-2xl"
-            onclick="hideMenu()"
-          ></i>
+          <i id="menuClose" class="fa fa-times cursor-pointer text-2xl"></i>
           <ul class="mt-8 space-y-4">
             <li>
               <a href="#" class="text-white hover:underline hover:text-red-600"
@@ -103,7 +100,7 @@
           </li>
           <li class="relative inline-block py-2 px-3 text-sm">
             <a
-              href="./src//pages/contacts.html"
+              href="./src/pages/contacts.html"
               class="text-white hover:underline hover:text-red-600"
               >CONTACT</a
             >
@@ -209,7 +206,7 @@
           </div>
         </div>
         <div class="relative mb-8 flex-1 overflow-hidden rounded-lg">
-          <img src="./assets/washington1.jpg" alt="New York" class="w-full" />
+          <img src="./assets/newYork.jpg" alt="New York" class="w-full" />
           <div
             class="absolute inset-0 flex items-center justify-center bg-transparent transition-all duration-500 hover:bg-[rgba(240,150,150,0.7)]"
           >
@@ -327,7 +324,7 @@
 
     <section
       class="relative mx-auto my-24 w-4/5 text-center py-24 bg-black bg-opacity-70 bg-blend-overlay bg-cover rounded-lg"
-      style="background-image: url('./assets/last\ .jpg')"
+      style="background-image: url('./assets/last.jpg')"
     >
       <h1 class="text-4xl font-semibold text-white mb-10">
         Enroll For Our Various Online Courses <br />Anywhere From The World
