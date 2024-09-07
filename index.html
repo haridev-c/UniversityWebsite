@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script type="module" defer src="main.js"></script>
+    <script type="module" defer src="./src/scripts/main.js"></script>
   </head>
   <body class="m-0 p-0 font-poppins text-gray-700">
     <section
@@ -30,14 +30,18 @@
             class="fa fa-bars text-white cursor-pointer"
           ></i>
         </div>
+
+        <!-- Sidebar Start -->
         <div
-          class="fixed top-0 right-[-100%] w-[60%] h-full bg-orange-600 text-white p-8 transition-all duration-300 lg:hidden"
+          class="fixed top-0 z-10 right-[-100%] w-[60%] h-full bg-orange-600 text-white p-8 transition-all duration-300 lg:hidden"
           id="logslink"
         >
           <i id="menuClose" class="fa fa-times cursor-pointer text-2xl"></i>
           <ul class="mt-8 space-y-4">
             <li>
-              <a href="#" class="text-white hover:underline hover:text-red-600"
+              <a
+                href="./index.html"
+                class="text-white hover:underline hover:text-red-600"
                 >HOME</a
               >
             </li>
@@ -65,9 +69,14 @@
             </li>
           </ul>
         </div>
+
+        <!-- Sidebar End -->
+
         <ul class="hidden lg:flex space-x-4">
           <li class="relative inline-block py-2 px-3 text-sm">
-            <a href="#" class="text-white hover:underline hover:text-red-600"
+            <a
+              href="/index.html"
+              class="text-white hover:underline hover:text-red-600"
               >HOME</a
             >
             <span

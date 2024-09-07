@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script defer src="mainc.js"></script>
+    <script defer type="module" src="../scripts/main.js"></script>
   </head>
   <body class="font-poppins">
     <section
@@ -31,14 +31,14 @@
           <img src="../../assets/1.png" alt="University Logo" />
         </a>
         <div class="hidden lg:flex space-x-8 text-sm">
-          <a href="#" class="text-white">HOME</a>
+          <a href="../../index.html" class="text-white">HOME</a>
           <a href="#" class="text-white">ABOUT</a>
           <a href="#" class="text-white">COURSE</a>
           <a href="#" class="text-white">BLOG</a>
           <a href="#" class="text-white">CONTACT</a>
         </div>
         <div class="cursor-pointer md:hidden">
-          <i class="fa fa-bars text-white" onclick="showMenu()"></i>
+          <i id="hamburgerMenu" class="fa fa-bars text-white"></i>
         </div>
       </nav>
 
@@ -46,9 +46,9 @@
         class="fixed top-0 right-[-100%] w-[60%] h-full bg-orange-600 text-white p-8 transition-all duration-300 lg:hidden"
         id="logslink"
       >
-        <i class="fa fa-times cursor-pointer text-2xl" onclick="hideMenu()"></i>
+        <i id="menuClose" class="fa fa-times cursor-pointer text-2xl"></i>
         <ul class="mt-8 space-y-4">
-          <li><a href="#">HOME</a></li>
+          <li><a href="../../index.html">HOME</a></li>
           <li><a href="#">ABOUT</a></li>
           <li><a href="#">COURSE</a></li>
           <li><a href="#">BLOG</a></li>
